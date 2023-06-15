@@ -1,10 +1,16 @@
 
-label{
+/* label{
   margin: 15px;
-}
+} */
 table{
     margin-top: 3rem;
 }
 button{
-  margin-left: 6rem;
+  margin-left: 30rem;
+  margin-top: 3rem;
 }
+input, select{
+  width: 30%;
+  margin-left:10rem ;
+}
+
