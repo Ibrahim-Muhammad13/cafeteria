@@ -23,14 +23,13 @@ import { ProfileComponent } from './profile/profile.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { CheeckNumbEmailComponent } from './cheeck-numb-email/cheeck-numb-email.component';
 import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
+import { AllProductsComponent } from './all-products/all-products.component';
+import { AllProductsCardComponent } from './all-products-card/all-products-card.component';
 const routes: Routes = [
-  {
-    path: 'editUser/:id',
-    component: EditUserComponent
-  },
+
   {
     path:'',
-    redirectTo : 'home',
+    redirectTo :'home',
     pathMatch:"full"
   },
   {
@@ -46,6 +45,14 @@ const routes: Routes = [
     component : CategoryDetailsComponent
   },
   {
+    path:'allproducts',
+    component : AllProductsComponent
+  },
+  {
+    path:'allproductscard',
+    component : AllProductsCardComponent
+  },
+  {
     path: 'register',
     component : RegisterComponent
   },
@@ -54,14 +61,15 @@ const routes: Routes = [
     component : LoginComponent
   },
   {path:'forget/password',
-   component:ForgetPasswordComponent
+    component:ForgetPasswordComponent
   },
   {path:'cheekNumber',
   component:CheeckNumbEmailComponent
- },
- {path:'resetPassword',
- component:ResetpasswordComponent
-},
+  },
+  {
+    path:'resetPassword',
+    component:ResetpasswordComponent
+  },
   {
     path:'product-details/:id',
     component : ProductDetailsComponent
@@ -82,6 +90,10 @@ const routes: Routes = [
       {
         path: 'addUser',
         component: AddUserComponent
+      },
+      {
+        path: 'editUser/:id',
+        component: EditUserComponent
       },
       {
         path:'products',
